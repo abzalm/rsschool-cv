@@ -41,3 +41,9 @@ I haven't got a job as a developer yet
   - [CS50 lectures](https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA)
   - [RS School - in progress (stage0)](https://rs.school/)
   - [FreeCodeCamp](https://www.freecodecamp.org)
+
+## __Languages__
+- __English - Intermediate(B1)__
+- __Kazakh - Native__
+- __Russian - Advanced__
+- __Chinese - HSK1(HSK2 in process)__
