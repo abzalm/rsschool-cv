@@ -33,3 +33,11 @@ function even_or_odd(n) {
     }
 };
 ```
+## __Experience__
+I haven't got a job as a developer yet
+## __Education__ 
+- __College:__ Karagandy High Polytechnic College, Computer engineering and software
+- __Courses:__
+  - [CS50 lectures](https://www.youtube.com/channel/UCcabW7890RKJzL968QWEykA)
+  - [RS School - in progress (stage0)](https://rs.school/)
+  - [FreeCodeCamp](https://www.freecodecamp.org)
