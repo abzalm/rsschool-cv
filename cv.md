@@ -11,3 +11,14 @@
 
 ## __About Me__
 I am an energetic, goal-oriented, reliable, responsible and hardworking person. I am a mature team worker and can adapt to all difficult situations. I can work well both in a team and on my own initiative. If I don't know something, I'm willing to learn new skills, software development languages, etc.
+
+## __Skills__
+- HTML
+- CSS
+- JavaScript (Basic)
+- Git
+- Python (Basic)
+- PHP (Basic)
+- C# (Basic)
+- Java (Basic)
+- Arduino
