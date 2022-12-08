@@ -22,3 +22,14 @@ I am an energetic, goal-oriented, reliable, responsible and hardworking person. 
 - C# (Basic)
 - Java (Basic)
 - Arduino
+
+## __Code Example__
+```javascript
+function even_or_odd(n) {
+    if(n % 2 === 0) {
+      return 'Even';
+    } else {
+      return 'Odd';
+    }
+};
+```
