@@ -1,5 +1,434 @@
-p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 60px;
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Manrope", sans-serif;
+    scroll-behavior: smooth;
+}
 
+:root {
+    --main-color: #ffb703;
+    --bg-color: #fff;
+    --text-color:#023047;
+    --hover: #fb8500;
+
+    --big-font: 3.2rem;
+    --medium-font: 1.8rem;
+    --p-font: 0.941 rem;
+}
+
+@keyframes show {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    background: var(--bg-color);
+    padding: 14px 10%;
+    transition: 0.2s;
+    box-shadow: -3px -3px 7px #ffffff73, 1px 1px 100px rgba(121, 105, 94, 0.288);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 200;
+    color: var(--text-color);
+    transition: 0.5s;
+    letter-spacing: -0.1rem;
+}
+.logo:hover {
+transition: 0.5s;
+color: var(--hover);
+font-weight: 800;
+letter-spacing: 0.2rem;
+}
+.navbar {
+    display: flex;
+}
+
+.navbar a {
+    transition: 0.5s;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    color: var(--text-color);
+    font-weight: 400;
+    letter-spacing: -0.05rem;
+}
+.navbar a:hover {
+    transition: 0.5s;
+    color: var(--hover);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+#menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+}
+
+.home {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+
+.home-img img {
+    width: 20rem;
+    border-radius: 0.5rem;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    transition: 1s;
+}
+.home-img img:hover {
+    border-radius: 5rem;
+    background-color: #00DBDE;
+    transition: 1s;
+}
+
+.home-text{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--text-color);
+    opacity: 1;
+    transition: 0.5s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+    letter-spacing: -0.1rem;
+}
+.home-text:hover{
+    font-size: 1.5rem;
+    letter-spacing: -0.05rem;
+    transition: 0.5s;
+    color: var(--hover);
+    font-weight: 800;
+    letter-spacing: 0.1rem;
+}
+
+.title{
+    font-weight: 800;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    color: var(--text-color);
+    letter-spacing: 0.1rem;
+}
+
+.title:hover{
+    font-weight: 200;
+    transition: 0.5s;
+    color: var(--hover);
+    letter-spacing: -0.1rem;
+}
+
+.about{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.skills{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.skills ul li{
+    font-size: 2em;
+}
+.skills li:hover{
+    content: "□ "; color: var(--hover)
+}
+.skills li::before {content: "■ "; color: var(--hover)}
+
+.education{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.education ul li{
+    font-size: 2em;
+}
+.education li:hover{
+    content: "□ "; color: var(--hover)
+}
+.education li::before {content: "■ "; color: var(--hover)}
+
+.education h1{
+    font-size: 2em;
+}
+.li-course::before {content: ""; color: var(--hover)}
+
+.li-course{
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.portfolio {
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    min-height: 100vh;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.portfolio-img{
+    display: grid;
+    grid-template-areas: 
+    '1st 2nd'
+    '3rd 4th';
+    row-gap: 5%;
+    column-gap: 5%;
+    margin: 0% 5% 5% 5%;
+    width: 100%;
+    height: 100%;
+}
+.portfolio-img img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: -3px -3px 7px #ffffff73, 1px 1px 100px rgba(121, 105, 94, 0.288);
+}
+
+#btn-txt{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    display: block;
+    border: 0px;
+}
+
+.btn:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.languages{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.languages ul li{
+    font-size: 2em;
+}
+.languages li:hover{
+    content: "□ "; color: var(--hover)
+}
+.languages li::before {content: "■ "; color: var(--hover)}
+
+.contacts{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+.contacts ul li{
+    font-size: 2em;
+}
+.contacts li:hover{
+    content: "□ "; color: var(--hover)
+}
+.contacts li::before {content: "■ "; color: var(--hover)}
+
+#js-code {
+    font-family: monospace;
+    font-size: 1rem;
+}
+
+.code-ex{
+    display: flex;
+    margin: 0% 5% 5% 5%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    opacity: 1;
+    transition: 1s;
+    animation: show 1s;
+    animation-fill-mode: both;
+    animation-delay: 0.5s;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--text-color);
+  }
+  
+.f-year {
+    width: 100px;
+    text-align: center;
+    font-size: 37px;
+    line-height: 37px;
+    font-weight: bold;
+    color: var(--bg-color);
+}
+
+.f-github > a {
+    color: var(--bg-color);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.f-github > a > i {
+    margin-right: 10px;
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+
+.f-rsschool > a > img {
+    width: 100px;
+    position: relative;
+    top: 3px;
+    filter: invert();
+}
+
+@media(max-width: 900px){
+   section {
+       padding: 50px 4%;
+    }
+    :root{
+        --big-font: 2.4rem;
+        --medium-font: 1.2rem;
+    }
+    header{
+        padding: 11px 4%;
+    }
+    header .navbar{
+        position: absolute;
+        top: -520px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        background: var(--bg-color);
+        box-shadow: 0 4px 4px rgb(0 0 0 / 10%);
+        transition: 0.2s ease;
+        text-align: center;
+    }
+    .navbar a{
+        padding: 1.5rem;
+        display: block;
+        background: var(--bg-color);
+    }
+}
+
+@media(max-width: 400px){
+    :root{
+        --big-font: 1.7rem;
+        --medium-font: 1.1rem;
+    }
+    .home-text h2{
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    .title{
+    font-size: 1.2rem;
+    }
+    .skills ul li{
+        font-size: 1.5em;
+    }
+    .about ul li{
+        font-size: 1.5em;
+    }
+    .education ul li{
+        font-size: 1.5em;
+    }
+    .languages ul li{
+        font-size: 1.5em;
+    }
+    .contacts ul li{
+        font-size: 1.5em;
+    }
 }
